@@ -7,10 +7,20 @@ public class EmployeeDTO extends AbstractTreeNode {
 
 	private String name;
 	private Integer age;
+	private WifeDTO wifeDTO;
 
-	public EmployeeDTO(String name, Integer age) {
+	public EmployeeDTO(String name, Integer age, WifeDTO wifeDTO) {
 		this.name = name;
 		this.age = age;
+		this.wifeDTO = wifeDTO;
+	}
+
+	public WifeDTO getWifeDTO() {
+		return wifeDTO;
+	}
+
+	public void setWifeDTO(WifeDTO wifeDTO) {
+		this.wifeDTO = wifeDTO;
 	}
 
 	public String getName() {

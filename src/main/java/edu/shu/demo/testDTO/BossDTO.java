@@ -11,12 +11,22 @@ import java.util.List;
 public class BossDTO extends AbstractTreeNode {
     private String name;
     private Integer age;
+    private WifeDTO wifeDTO;
     private List<ManagerDTO> managerDTOList;
 
-    public BossDTO(String name, Integer age, List<ManagerDTO> managerDTOList) {
+    public BossDTO(String name, Integer age, WifeDTO wifeDTO, List<ManagerDTO> managerDTOList) {
         this.name = name;
         this.age = age;
+        this.wifeDTO = wifeDTO;
         this.managerDTOList = managerDTOList;
+    }
+
+    public WifeDTO getWifeDTO() {
+        return wifeDTO;
+    }
+
+    public void setWifeDTO(WifeDTO wifeDTO) {
+        this.wifeDTO = wifeDTO;
     }
 
     public String getName() {
