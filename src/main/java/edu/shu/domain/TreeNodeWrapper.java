@@ -22,7 +22,7 @@ public class TreeNodeWrapper implements ITreeNode {
     private TreeNodeWrapper parent;
 
     //真正的记录信息
-    private ITreeNode metaData;
+    private Object metaData;
 
     @JSONField(ordinal = 6)
     private List<TreeNodeWrapper> children = new ArrayList<TreeNodeWrapper>();
@@ -36,7 +36,7 @@ public class TreeNodeWrapper implements ITreeNode {
     public TreeNodeWrapper(ITreeNode obj) {
         this.nodeId = obj.getNodeId();
         this.parentId = obj.getParentId();
-        this.metaData = obj;
+        this.metaData = obj.getMetaData();
     }
 
     public void addChild(TreeNodeWrapper treeNode) {
@@ -86,11 +86,13 @@ public class TreeNodeWrapper implements ITreeNode {
         this.children = children;
     }
 
-    public ITreeNode getMetaData() {
+    @Override
+    public Object getMetaData() {
         return metaData;
     }
 
-    public void setMetaData(ITreeNode metaData) {
+    @Override
+    public void setMetaData(Object metaData) {
         this.metaData = metaData;
     }
 

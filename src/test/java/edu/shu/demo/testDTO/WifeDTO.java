@@ -1,13 +1,10 @@
 package edu.shu.demo.testDTO;
 
-import edu.shu.base.AbstractTreeNode;
-import org.apache.commons.lang3.StringUtils;
-
 /**
  * @author liang
  * @create 2020/4/20 10:12 上午
  */
-public class WifeDTO extends AbstractTreeNode {
+public class WifeDTO {
     private String name;
     private Integer age;
 

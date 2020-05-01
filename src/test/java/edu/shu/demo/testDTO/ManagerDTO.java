@@ -1,14 +1,12 @@
 package edu.shu.demo.testDTO;
 
-import edu.shu.base.AbstractTreeNode;
-
 import java.util.List;
 
 /**
  * @author liang
  * @create 2020/4/19 10:25 上午
  */
-public class ManagerDTO extends AbstractTreeNode {
+public class ManagerDTO{
     private String name;
     private Integer age;
     private WifeDTO wifeDTO;

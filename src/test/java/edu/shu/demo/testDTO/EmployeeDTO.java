@@ -1,9 +1,7 @@
 package edu.shu.demo.testDTO;
 
 
-import edu.shu.base.AbstractTreeNode;
-
-public class EmployeeDTO extends AbstractTreeNode {
+public class EmployeeDTO{
 
 	private String name;
 	private Integer age;

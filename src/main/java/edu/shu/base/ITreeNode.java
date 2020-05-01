@@ -5,6 +5,10 @@ public interface ITreeNode {
 
     String getParentId();
 
+    Object getMetaData();
+
+    void setMetaData(Object obj);
+
     void setNodeId(String nodeId);
 
     void setParentId(String parentId);
